@@ -1,0 +1,174 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Verwende standardmäßig Roboto für Fließtext */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0; /* dezentes Hellgrau */
+    color: #333;               /* dunkle Schriftfarbe für guten Kontrast */
+    line-height: 1.6;
+  }
+  
+  /* Für Überschriften die „Funnel Display“-Schrift verwenden */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Funnel Display', sans-serif;
+  }
+  
+  /* 
+    -------------------------------------------------
+    Header
+    -------------------------------------------------
+  */
+  header {
+    /* Farbverlauf von Dunkellila zu etwas hellerem Lila */
+    background: linear-gradient(135deg, #4B0082, #663399);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  /*
+    -------------------------------------------------
+    Navigation
+    -------------------------------------------------
+  */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  /* Hamburger button hidden by default */
+.hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* Hamburger bar style */
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #333;
+  }
+
+ 
+/* Mobile styles */
+@media (max-width: 768px) {
+    /* Hide navigation menu by default */
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+    }
+    
+    /* Show the hamburger button in mobile view */
+    .hamburger {
+      display: block;
+    }
+    
+    /* When active, display the nav menu */
+    .nav-menu.active {
+      display: flex;
+    }
+  } 
+  /*
+    -------------------------------------------------
+    Hauptbereich (main)
+    -------------------------------------------------
+  */
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #ffffff; /* Weißer Kasten für guten Lesekontrast */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 6px;
+  }
+  
+  /* Überschrift im Main-Bereich */
+  main h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #4B0082; /* Überschrift in Lila, passend zum Header */
+  }
+  
+  /*
+    -------------------------------------------------
+    Galerie: 3x3-Grid
+    -------------------------------------------------
+  */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Spalten */
+    gap: 1rem;                             /* Abstand zwischen den Spalten */
+  }
+  
+  .gallery figure {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .gallery figure:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .gallery figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .gallery figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  
+  /*
+    -------------------------------------------------
+    Footer
+    -------------------------------------------------
+  */
+  footer {
+    /* Farbverlauf wie im Header, nur etwas dunkler */
+    background: linear-gradient(135deg, #663399, #4B0082);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  
