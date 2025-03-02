@@ -1,31 +1,23 @@
-
-
+/* Basis-Stile für alle Geräte (Mobile-First) */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
-  /* Verwende standardmäßig Roboto für Fließtext */
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0; /* dezentes Hellgrau */
-    color: #333;               /* dunkle Schriftfarbe für guten Kontrast */
+    background-color: #f0f0f0;
+    color: #333;
     line-height: 1.6;
   }
   
-  /* Für Überschriften die „Funnel Display“-Schrift verwenden */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Funnel Display', sans-serif;
   }
   
-  /* 
-    -------------------------------------------------
-    Header
-    -------------------------------------------------
-  */
+  /* Header */
   header {
-    /* Farbverlauf von Dunkellila zu etwas hellerem Lila */
     background: linear-gradient(135deg, #4B0082, #663399);
     color: #fff;
     text-align: center;
@@ -38,16 +30,13 @@
     letter-spacing: 1px;
   }
   
-  /*
-    -------------------------------------------------
-    Navigation
-    -------------------------------------------------
-  */
+  /* Navigation */
   nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     margin-top: 1rem;
   }
   
@@ -63,13 +52,14 @@
   nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
-  /* Hamburger button hidden by default */
-.hamburger {
-    display: none;
+  
+  /* Hamburger-Menü (sichtbar in der mobilen Ansicht) */
+  .hamburger {
+    display: block;
     cursor: pointer;
+    margin: 0 auto;
   }
   
-  /* Hamburger bar style */
   .bar {
     display: block;
     width: 25px;
@@ -77,57 +67,40 @@
     margin: 5px;
     background-color: #333;
   }
-
- 
-/* Mobile styles */
-@media (max-width: 768px) {
-    /* Hide navigation menu by default */
-    .nav-menu {
-      display: none;
-      flex-direction: column;
-    }
-    
-    /* Show the hamburger button in mobile view */
-    .hamburger {
-      display: block;
-    }
-    
-    /* When active, display the nav menu */
-    .nav-menu.active {
-      display: flex;
-    }
-  } 
-  /*
-    -------------------------------------------------
-    Hauptbereich (main)
-    -------------------------------------------------
-  */
+  
+  /* Navigation-Menü: standardmäßig ausgeblendet */
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-menu.active {
+    display: flex;
+  }
+  
+  /* Hauptbereich (main) */
   main {
-    max-width: 900px;
-    margin: 2rem auto;
+    max-width: 100%;
+    margin: 1rem;
     padding: 1rem;
-    background-color: #ffffff; /* Weißer Kasten für guten Lesekontrast */
+    background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 6px;
   }
   
-  /* Überschrift im Main-Bereich */
   main h1 {
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
-    color: #4B0082; /* Überschrift in Lila, passend zum Header */
+    color: #4B0082;
   }
   
-  /*
-    -------------------------------------------------
-    Galerie: 3x3-Grid
-    -------------------------------------------------
-  */
+  /* Galerie: Standardmäßig als einspaltiges Raster (für mobile Geräte) */
   .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 Spalten */
-    gap: 1rem;                             /* Abstand zwischen den Spalten */
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
   
   .gallery figure {
@@ -157,13 +130,8 @@
     color: #444;
   }
   
-  /*
-    -------------------------------------------------
-    Footer
-    -------------------------------------------------
-  */
+  /* Footer */
   footer {
-    /* Farbverlauf wie im Header, nur etwas dunkler */
     background: linear-gradient(135deg, #663399, #4B0082);
     color: #fff;
     text-align: center;
