@@ -17,7 +17,7 @@ function calculateWindChill(tempC, speedKmh) {
       11.37 * Math.pow(speedKmh, 0.16) +
       0.3965 * tempC * Math.pow(speedKmh, 0.16);
 
-    )
+    
     return windChill.toFixed(1);
   } else {
     
