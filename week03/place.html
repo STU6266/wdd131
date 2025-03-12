@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals - Steven Kemendics</title>
+  <meta name="description" content="WDD 131 / Homepage"/>
+  <meta name="author" content="Steven Kemendics"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Desktop Styles -->
+  <link rel="stylesheet" href="style-large.css" media="(min-width: 769px)">
+  <!-- Mobile Styles -->
+  <link rel="stylesheet" href="style.css" media="(max-width: 768px)">
+</head>
+<body>
+  <header>
+    <section class="content">
+      <h2>Welcome to Vienna</h2>
+      <p>Explore the beautiful capital of Austria, known for its stunning architecture, rich history, and vibrant culture.</p>
+    </section>
+    <div class="hero">
+      <!-- In der mobilen Ansicht wird das Hero-Bild über ein ::before-Pseudoelement eingeblendet -->
+      <div class="info-container">
+        <div class="info-box data">
+          <h2>City Information</h2>
+          <ul>
+            <li><strong>Area:</strong> 414.6 sq km</li>
+            <li><strong>Population:</strong> 1,920,949</li>
+            <li><strong>Capital of:</strong> Austria</li>
+            <li><strong>Languages:</strong> German</li>
+            <li><strong>Currency:</strong> Euro (€)</li>
+            <li><strong>Time Zone:</strong> UTC+1 (CET), UTC+2 (CEST in summer)</li>
+            <li><strong>Calling Code:</strong> +43</li>
+            <li><strong>Internet TLD:</strong> .at</li>
+          </ul>
+        </div>
+        <div class="info-box weather">
+            <h2>Weather</h2>
+            <ul>
+              <img src="weather-icon.png" alt="weather Icon">
+              <li><strong>Temperature:</strong> <span id="tempValue">12</span>&deg;C</li>
+              <li><strong>Conditions:</strong> Cloudy</li>
+              <li><strong>Wind:</strong> <span id="windValue">10</span> km/h</li>
+              <li><strong>Wind Chill:</strong> <span id="chillValue"></span>&deg;C</li>
+            </ul>
+          
+      </div>
+    </div>
+  </header>
+  <main>
+    
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Steven Kemendics. Austria</p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
