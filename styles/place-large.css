@@ -16,7 +16,7 @@ section {
 header {
     background-color: #b22222;
     color: white;
-    padding: 20px;
+    
 }
 
 
@@ -25,14 +25,11 @@ main {
     overflow: hidden;
 }
 
-.hero {
-    position: relative;
-    min-height: 100vh; /* sorgt dafür, dass das Hero-Image immer mindestens die volle Viewport-Höhe hat */
-    background-image: url("/images/wien.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
 .info-container {
     position: absolute;
@@ -53,14 +50,14 @@ main {
 
 .info-box.data {
     left: 5%;
-    top: 53%;
+    top: 100%;
     background-color: rgba(46, 139, 87, 0.7);
     color: white;
 }
 
 .info-box.weather {
     right: 4%;
-    top: 5%;
+    top: 30%;
     background-color: rgba(70, 130, 180, 0.7);
     color: white;
 }
