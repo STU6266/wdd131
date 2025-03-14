@@ -1,3 +1,4 @@
+/* Bestehende Regeln bleiben unverändert */
 html, body {
     margin: 0;
     padding: 0;
@@ -16,9 +17,7 @@ section {
 header {
     background-color: #b22222;
     color: white;
-    
 }
-
 
 main {
     flex: 0 0 30vh;
@@ -29,7 +28,7 @@ main {
     width: 100%;
     height: auto;
     display: block;
-  }
+}
 
 .info-container {
     position: absolute;
@@ -39,6 +38,7 @@ main {
     height: 100%;
     z-index: 2;
 }
+
 .info-box {
     position: absolute;
     padding: 10px;
@@ -62,8 +62,27 @@ main {
     color: white;
 }
 
+/* In der großen Ansicht: Das img-Element ausblenden */
+.info-box.weather img {
+    display: none;
+}
+
 .info-box h2 {
     margin-top: 0;
+}
+
+/* Pseudo-Element nach der Überschrift "Weather" einfügen,
+   das das Wetter-Icon anzeigt */
+.info-box.weather h2::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/images/weather-icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
 .info-box ul {
@@ -81,7 +100,17 @@ footer {
     color: white;
     padding: 10px;
 }
+
 footer p {
     margin: 0 10px;
     display: inline-block;
+}
+
+/* Beispiel eines zusätzlichen Media Query:
+   Ab 1200px wird das Icon etwas größer */
+@media (min-width: 1200px) {
+    .info-box.weather h2::after {
+         width: 32px;
+         height: 32px;
+    }
 }
