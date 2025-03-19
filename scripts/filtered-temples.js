@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Setzt das aktuelle Jahr und Datum der letzten Änderung
+   
     const currentYear = new Date().getFullYear();
     document.getElementById("currentyear").textContent = currentYear;
     const lastModifiedDate = document.lastModified;
     document.getElementById("lastModified").textContent = "Last Modified: " + lastModifiedDate;
   
-    // Hamburger-Menü Funktionalität
+   
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
   
     hamburger.addEventListener('click', function() {
-      // Toggle the active class to show/hide the navigation menu
+    
       navMenu.classList.toggle('active');
       
-      // Change the hamburger icon to an 'X' when active, and revert back when inactive
+ 
       if (navMenu.classList.contains('active')) {
         hamburger.innerHTML = '&times;';
       } else {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   
-    // Array mit Tempel-Daten
+
     const temples = [
       {
         templeName: "Aba Nigeria",
@@ -105,10 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     ];
   
-    // Funktion zum Erstellen der Tempel-Karten
+  
     function createtempleCard(templesArray) {
       const templeCardsContainer = document.querySelector('.res-grid');
-      // Vorherige Karten entfernen
+   
       templeCardsContainer.innerHTML = '';
   
       templesArray.forEach(temple => {
@@ -127,45 +127,45 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   
-    // Hilfsfunktion zum Filtern der Tempel basierend auf dem Filtertyp
+
     function filterTemples(filterType) {
       let filteredTemples;
       switch (filterType) {
         case 'old':
-          // Tempel, die vor 1900 geweiht wurden
+    
           filteredTemples = temples.filter(temple => parseInt(temple.dedicated) < 1900);
           break;
         case 'new':
-          // Tempel, die nach 2000 geweiht wurden
+   
           filteredTemples = temples.filter(temple => parseInt(temple.dedicated) > 2000);
           break;
         case 'large':
-          // Tempel größer als 90.000 sq ft
+       
           filteredTemples = temples.filter(temple => temple.area > 90000);
           break;
         case 'small':
-          // Tempel kleiner als 10.000 sq ft
+      
           filteredTemples = temples.filter(temple => temple.area < 10000);
           break;
         default:
-          // "Home" oder unbekannter Filter – alle Tempel anzeigen
+   
           filteredTemples = temples;
       }
       return filteredTemples;
     }
   
-    // Event-Listener für die Navigation-Menü-Links
+
     document.querySelectorAll('.nav-menu a').forEach(link => {
       link.addEventListener('click', event => {
         event.preventDefault();
-        // Filtertyp wird aus dem Link-Text ermittelt (z. B. "Home", "Old", etc.)
+
         const filterType = link.textContent.toLowerCase();
         const filteredTemples = filterTemples(filterType);
         createtempleCard(filteredTemples);
       });
     });
   
-    // Alle Tempel standardmäßig anzeigen
+ 
     createtempleCard(temples);
   });
   

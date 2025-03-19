@@ -1,4 +1,4 @@
-/* Basis-Stile für alle Geräte (Mobile-First) */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +16,7 @@
     font-family: 'Funnel Display', sans-serif;
   }
   
-  /* Header */
+ 
   header {
     background: linear-gradient(135deg, #4B0082, #663399);
     color: #fff;
@@ -30,7 +30,7 @@
     letter-spacing: 1px;
   }
   
-  /* Navigation */
+  
   nav ul {
     list-style: none;
     display: flex;
@@ -53,7 +53,7 @@
     background-color: rgba(255, 255, 255, 0.2);
   }
   
-  /* Hamburger-Menü (sichtbar in der mobilen Ansicht) */
+ 
   .hamburger {
     display: block;
     cursor: pointer;
@@ -68,7 +68,7 @@
     background-color: #333;
   }
   
-  /* Navigation-Menü: standardmäßig ausgeblendet */
+  
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -79,7 +79,7 @@
     display: flex;
   }
   
-  /* Hauptbereich (main) */
+
   main {
     max-width: 100%;
     margin: 1rem;
@@ -89,7 +89,7 @@
     border-radius: 6px;
   }
   
-  /* Grid-Layout für die Tempel-Karten */
+  
   .res-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -97,7 +97,7 @@
     padding: 1rem;
   }
   
-  /* Styling für die Tempel-Karten */
+  
   .temple-card {
     background: #fff;
     border-radius: 8px;
@@ -131,7 +131,7 @@
     color: #555;
   }
   
-  /* Footer */
+ 
   footer {
     background: linear-gradient(135deg, #663399, #4B0082);
     color: #fff;
@@ -141,7 +141,7 @@
     font-size: 0.9rem;
   }
   
-  /* Für größere Bildschirme (ab 790px) */
+
   @media (min-width: 790px) {
     header {
       padding: 1.5rem;
