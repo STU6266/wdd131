@@ -1,15 +1,13 @@
-
 * {
-    box-sizing: border-box;
+    box-sizing:  border-box;
     margin: 0;
     padding:  0;
   }
-
   
   body {
-
     font-family: 'Roboto', sans-serif;
     background-color: #f7f7f7;
+
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -21,18 +19,27 @@
     color: #2c3e50;
   }
   
-  form 
-  {
+  form {
     background: #fff;
     padding: 20px;
-    max-width:  600px;
+    max-width: 600px;
+
     margin: 0 auto;
-    border: 1px solid  #ddd;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px  rgba(0, 0, 0, 0.05);
   }
   
+ 
+  .rating label {
+    display: inline-block;
+    margin-right: 10px;
+
+  }
+
+  
   form label {
+
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -43,7 +50,6 @@
   form select,
   form textarea {
     width: 100%;
-
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -58,6 +64,7 @@
   }
   
   form fieldset legend {
+
     font-weight: bold;
     margin-bottom: 10px;
   }
@@ -66,6 +73,8 @@
   form input[type="checkbox"] {
     margin-right: 5px;
   }
+
+
   
   form input[type="submit"] {
     background-color: #2980b9;
@@ -77,16 +86,13 @@
     font-size: 1rem;
     display: block;
     width: 100%;
-    margin-top: 10px;
-
+    margin-top:  10px;
   }
   
   form input[type="submit"]:hover {
     background-color: #1f6391;
   }
   
-  
-
   footer {
     text-align: center;
     margin-top: 20px;
