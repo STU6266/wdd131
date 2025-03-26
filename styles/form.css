@@ -1,11 +1,13 @@
-/* Reset some defaults */
+
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding:  0;
   }
+
   
   body {
+
     font-family: 'Roboto', sans-serif;
     background-color: #f7f7f7;
     color: #333;
@@ -19,12 +21,13 @@
     color: #2c3e50;
   }
   
-  form {
+  form 
+  {
     background: #fff;
     padding: 20px;
-    max-width: 600px;
+    max-width:  600px;
     margin: 0 auto;
-    border: 1px solid #ddd;
+    border: 1px solid  #ddd;
     border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   }
@@ -40,6 +43,7 @@
   form select,
   form textarea {
     width: 100%;
+
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -74,13 +78,15 @@
     display: block;
     width: 100%;
     margin-top: 10px;
+
   }
   
   form input[type="submit"]:hover {
     background-color: #1f6391;
   }
   
-  /* Footer styling */
+  
+
   footer {
     text-align: center;
     margin-top: 20px;
