@@ -2,6 +2,7 @@ const button = document.querySelector('button'); // Adjust the selector as neede
 const input = document.querySelector('input'); // Adjust the selector as needed
 const list = document.querySelector('ul'); // Adjust the selector as needed
 
+
 button.addEventListener('click', function () {
   // Ensure input isn't empty before creating a list item
   const trimmedValue = input.value.trim();
