@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Steven Kemendics</title>
+  <link rel="stylesheet" href="r_style.css">
+</head>
+<body>
+  <header>
+    <!-- Header-Inhalt -->
+    <div class="header-bg-image">
+      <img loading="lazy" src="images/original-profile.jpg" alt="Steven Kemendics am Schreibtisch">
+    </div>
+    <div class="profile-container">
+      <img loading="lazy" src="images/profil.png" alt="Profile Picture" class="profile-pic">
+      <div class="header-text">
+        <h1>Steven KEMENDICS</h1>
+        <p>Software Developer</p>
+      </div>
+    </div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Resume</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="mcdonalds.html">McDonald's</a></li>
+      <li><a href="interspar.html">Interspar</a></li>
+      <li><a href="reiter.html">Reiter</a></li>
+      <li><button id="contact-button" class="nav-button">Contact Me</button></li>
+    </ul>
+  </nav>
+  
+  <div id="modal-overlay"></div>
+  <div id="contact-modal">
+    <h2>Send me a message</h2>
+    <div id="contact-info">
+      <p>E-mail: stevenkemendics@gmail.com</p>
+      <p>Phone: +43 660 8739016</p>
+    </div>
+    <textarea placeholder="Your message..."></textarea>
+    <button id="send-button">Send</button>
+    <button id="close-button">Close</button>
+  </div>
+  
+ 
+  <div id="language-switcher" style="text-align: center; margin: 20px;">
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('de')">Deutsch</button>
+  </div>
+  
+  <main>
+   
+    <div id="content-en">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          As a passionate and motivated student pursuing a degree in Computer Science, I am eager to apply my foundational knowledge and growing skills in software development to real-world projects. My goal is to gain hands-on experience in coding, problem-solving, and collaborative teamwork at a dynamic tech company. I am committed to continuous learning and excited to contribute innovative solutions while developing my professional abilities.
+        </p>
+      </section>
+      
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>🔹 Programming Languages: Python, CSS, JavaScript, C#</li>
+          <li>🔹 IT Knowledge: Basic Microsoft Office</li>
+          <li>🔹 GitHub: <a href="https://github.com/STU6266/python.git" target="_blank">My Python projects</a></li>
+        </ul>
+      </section>
+      
+      <section id="experience">
+        <h2>Work Experience</h2>
+        <article>
+          <h3>🏢 Heinrich Reiter GmbH – Vienna (2017 – Present)</h3>
+          <p><strong>Warehouse/Sales Associate</strong></p>
+          <ul>
+            <li>Optimized inventory management and logistics processes</li>
+            <li>Efficient merchandise preparation and customer service</li>
+            <li>Teamwork and independent work responsibilities</li>
+          </ul>
+        </article>
+        <article>
+          <h3>🏢 Interspar – Vienna (2014 – 2017)</h3>
+          <p><strong>Sales Associate</strong></p>
+          <ul>
+            <li>Conducted sales conversations and provided customer consultations</li>
+            <li>Acquired extensive experience in quality control and inventory management systems</li>
+            <li>Completed training as a TOP salesperson</li>
+          </ul>
+        </article>
+        <article>
+          <h3>🏢 McDonald's – Deutsch-Wagram (2012 – 2014, 2009 – 2010)</h3>
+          <p><strong>Crew Member & Crew Trainer</strong></p>
+          <ul>
+            <li>Trained new employees</li>
+            <li>Quality assurance and process optimization</li>
+          </ul>
+        </article>
+      </section>
+      
+      <section id="strengths">
+        <h2>Personal Strengths</h2>
+        <ul>
+          <li>✔ Ability to Build Relationships</li>
+          <li>✔ Recognizing Potential</li>
+          <li>✔ Responsibility</li>
+          <li>✔ Persuasiveness</li>
+          <li>✔ Positive Attitude</li>
+        </ul>
+      </section>
+      
+      <section id="languages">
+        <h2>Languages</h2>
+        <ul>
+          <li>🌍 German (fluent, written & spoken)</li>
+          <li>🌍 English (fluent, 2-year stay in the USA)</li>
+        </ul>
+      </section>
+      
+      <section id="education">
+        <h2>Education & Training</h2>
+        <ul>
+          <li>🎓 Bachelor Degree in Software Development (April 2024 – Today)</li>
+          <li>🎓 Certified Trainer (ISO 17024) (2018)</li>
+          <li>🎓 Business Service Clerk (2010)</li>
+          <li>🎓 Qualified Rural Household Worker (2010)</li>
+          <li>🎓 LFS Obersiebenbrunn – Specialization in Household Management (2005 – 2008)</li>
+        </ul>
+      </section>
+    </div>
+    
+    
+    <div id="content-de" style="display: none;">
+      <section id="about-de">
+        <h2>Über mich</h2>
+        <p>
+          Als leidenschaftlicher und motivierter Student, der einen Abschluss in Informatik anstrebt, bin ich bestrebt, mein grundlegendes Wissen und meine wachsenden Fähigkeiten in der Softwareentwicklung in realen Projekten anzuwenden. Mein Ziel ist es, praktische Erfahrungen im Programmieren, Problemlösen und in der Zusammenarbeit in einem dynamischen Technologieunternehmen zu sammeln. Ich bilde mich kontinuierlich weiter und freue mich darauf, mit innovativen Lösungen meine beruflichen Fähigkeiten auszubauen.
+        </p>
+      </section>
+      
+      <section id="skills-de">
+        <h2>Technische Fähigkeiten</h2>
+        <ul>
+          <li>🔹 Programmiersprachen: Python, CSS, JavaScript, C#</li>
+          <li>🔹 IT-Kenntnisse: Grundlagen in Microsoft Office</li>
+          <li>🔹 GitHub: <a href="https://github.com/STU6266/python.git" target="_blank">Meine Python-Projekte</a></li>
+        </ul>
+      </section>
+      
+      <section id="experience-de">
+        <h2>Berufserfahrung</h2>
+        <article>
+          <h3>🏢 Heinrich Reiter GmbH – Wien (2017 – Heute)</h3>
+          <p><strong>Lager-/Verkaufsmitarbeiter</strong></p>
+          <ul>
+            <li>Optimierung der Lagerverwaltung und Logistikprozesse</li>
+            <li>Effiziente Warenvorbereitung und Kundenservice</li>
+            <li>Teamarbeit und selbstständige Arbeitsweise</li>
+          </ul>
+        </article>
+        <article>
+          <h3>🏢 Interspar – Wien (2014 – 2017)</h3>
+          <p><strong>Verkaufsmitarbeiter</strong></p>
+          <ul>
+            <li>Führung von Verkaufsgesprächen und Kundenberatung</li>
+            <li>Umfangreiche Erfahrungen in der Qualitätskontrolle und im Warenmanagement</li>
+            <li>Abgeschlossene Ausbildung zum TOP-Verkäufer</li>
+          </ul>
+        </article>
+        <article>
+          <h3>🏢 McDonald's – Deutsch-Wagram (2012 – 2014, 2009 – 2010)</h3>
+          <p><strong>Mitarbeiter & Crew Trainer</strong></p>
+          <ul>
+            <li>Schulung neuer Mitarbeiter</li>
+            <li>Qualitätssicherung und Prozessoptimierung</li>
+          </ul>
+        </article>
+      </section>
+      
+      <section id="strengths-de">
+        <h2>Persönliche Stärken</h2>
+        <ul>
+          <li>✔ Fähigkeit, Beziehungen aufzubauen</li>
+          <li>✔ Potenzial erkennen</li>
+          <li>✔ Verantwortungsbewusstsein</li>
+          <li>✔ Überzeugungskraft</li>
+          <li>✔ Positive Einstellung</li>
+        </ul>
+      </section>
+      
+      <section id="languages-de">
+        <h2>Sprachen</h2>
+        <ul>
+          <li>🌍 Deutsch (fließend, in Wort und Schrift)</li>
+          <li>🌍 Englisch (fließend, 2 Jahre Aufenthalt in den USA)</li>
+        </ul>
+      </section>
+      
+      <section id="education-de">
+        <h2>Ausbildung & Weiterbildung</h2>
+        <ul>
+          <li>🎓 Bachelor in Softwareentwicklung (April 2024 – Heute)</li>
+          <li>🎓 Zertifizierter Trainer (ISO 17024) (2018)</li>
+          <li>🎓 Kaufmann für Betriebsdienstleistungen (2010)</li>
+          <li>🎓 Qualifizierter ländlicher Hauswirtschafter (2010)</li>
+          <li>🎓 LFS Obersiebenbrunn – Schwerpunkt Hauswirtschaft (2005 – 2008)</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-impressum">
+        <a href="impressum.html" target="_blank">Impressum</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Steven Kemendics</p>
+      <nav class="footer-nav">
+        <a href="https://www.facebook.com/steven.kemendics" target="_blank">
+          <img loading="lazy" src="images/facebook.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/steven-kemendics" target="_blank">
+          <img loading="lazy" src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+        </a>
+      </nav>
+    </div>
+  </footer>
+  
+  <script>
+    function switchLanguage(lang) {
+      if (lang === 'en') {
+        document.getElementById('content-en').style.display = 'block';
+        document.getElementById('content-de').style.display = 'none';
+      } else if (lang === 'de') {
+        document.getElementById('content-en').style.display = 'none';
+        document.getElementById('content-de').style.display = 'block';
+      }
+    }
+  </script>
+  
+  <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Steven Kemendics</title>
+  <link rel="stylesheet" href="r_style.css">
+</head>
+<body>
+  <header>
+    
+    <div class="header-bg-image">
+      <img loading="lazy" src="images/original-profile.jpg" alt="Steven Kemendics am Schreibtisch" />
+    </div>
+    <div class="profile-container">
+      <img loading="lazy" src="images/profil.png" alt="Profile Picture" class="profile-pic">
+      <div class="header-text">
+        <h1>Steven KEMENDICS</h1>
+        <p>Software Developer</p>
+      </div>
+    </div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Resume</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="mcdonalds.html">McDonald's</a></li>
+      <li><a href="interspar.html">Interspar</a></li>
+      <li><a href="reiter.html">Reiter</a></li>
+      <li><button id="contact-button" class="nav-button">Contact Me</button></li>
+    </ul>
+  </nav>
+  
+  <div id="modal-overlay"></div>
+  <div id="contact-modal">
+    <h2>Send me a message</h2>
+    <div id="contact-info">
+      <p>E-mail: stevenkemendics@gmail.com</p>
+      <p>Phone: +43 660 8739016</p>
+    </div>
+    <textarea placeholder="Your message..."></textarea>
+    <button id="send-button">Send</button>
+    <button id="close-button">Close</button>
+  </div>
+  
+ 
+  <div id="language-switcher" style="text-align: center; margin: 20px;">
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('de')">Deutsch</button>
+  </div>
+  
+ 
+  <div id="content-en">
+    <section class="reiter-experience">
+      <h2>Experiences at Heinrich Reiter GmbH</h2>
+      
+      <button id="toggle-text-btn">Short Version</button>
+      <div id="docx-content">
+        <p>
+          <p>From the beginning, it was clear to me that more was expected of me than from others in the company. I was supposed to quickly learn how to pick and pack the goods and understand the special requests of individual customers, as well as master the products themselves and customer consultation. I was hired not only to assist with warehouse management but also to support retail sales. In retail sales, I had to handle the sale and collection of goods, as well as the concerns of walk-in customers, in addition to the typical tasks in the warehouse.</p>
+          
+          <p>Teamwork was a challenging issue in this company. There were many different departments and areas, and long before I started, there were already disagreements and conflicts among long-term employees. There were always small groups that supported each other and created a good atmosphere, but in my almost eight years, there was never a moment when everyone in the warehouse got along. The head of the company, the founder's son, had even brought his two sons into the business. Although he always ensured the work safety of his employees, he had no open ear for disagreements.</p>
+          
+          <p>Time passed, and there was a constant change of employees in the company. I always got along very well with all the new colleagues. In sales, I tried to learn as much as possible about the different products on my own initiative. It was expected of me to handle the most common problems in the store. For more complicated matters, I was to call the specialist staff in the office. Since I apparently satisfied the boss very much, my salary increased almost annually, making me feel very comfortable in the company, especially as someone with a low level of education.</p>
+          
+          <p>I then set myself the goal of becoming a leader in the warehouse and began to further expand my knowledge. I changed departments in the warehouse and was always ready to help out where needed. As a result, I quickly became the only employee who had worked in every area and had knowledge of the entire warehouse. When the opportunity arose, I was appointed as one of two team leaders in the warehouse, despite being by far the youngest and having the fewest years of service in the company. In our warehouse, there was no warehouse manager, but two team leaders who divided the warehouse and tasks between them. Through my efforts to gain experience in all areas, more and more employees began to help out outside their own areas of responsibility, and the overall atmosphere improved. While the warehouse was not a complete unit, teamwork did improve.</p>
+        
+        </p>
+      </div>
+    </section>
+  </div>
+  
+
+  <div id="content-de" style="display: none;">
+    <section class="reiter-experience">
+      <h2>Erfahrungen bei der Heinrich Reiter GmbH</h2>
+    
+      <button id="toggle-text-btn-de">Kurze Version</button>
+      <div id="docx-content-de">
+        <p>
+          Von Anfang an war mir klar, dass von mir mehr erwartet wurde als von anderen im Unternehmen. Ich sollte schnell lernen, wie man die Waren kommissioniert und verpackt sowie die speziellen Wünsche einzelner Kunden verstehen, die Produkte selbst beherrschen und Kunden beraten. Ich wurde nicht nur eingestellt, um die Lagerverwaltung zu unterstützen, sondern auch, um den Einzelhandelsverkauf zu fördern. Im Verkauf musste ich den Verkauf und die Abwicklung der Waren sowie die Anliegen der Kunden im Laden behandeln – zusätzlich zu den typischen Aufgaben im Lager.
+        </p>
+        <p>
+          Teamarbeit war in diesem Unternehmen eine Herausforderung. Es gab viele verschiedene Abteilungen und Bereiche, und schon lange vor meinem Einstieg gab es Streitigkeiten und Konflikte unter langjährigen Mitarbeitern. Es bildeten sich stets kleine Gruppen, die sich gegenseitig unterstützten und eine gute Atmosphäre schufen – jedoch gab es in meinen fast acht Jahren nie einen Moment, in dem alle im Lager harmonierten. Der Unternehmensleiter, der Sohn des Gründers, hatte sogar seine beiden Söhne ins Unternehmen geholt. Obwohl er stets für die Arbeitssicherheit seiner Mitarbeiter sorgte, hatte er kein offenes Ohr für Meinungsverschiedenheiten.
+        </p>
+        <p>
+          Die Zeit verging, und es gab einen ständigen Wechsel der Mitarbeiter. Mit allen neuen Kollegen verstand ich mich immer sehr gut. Im Verkauf bemühte ich mich, so viel wie möglich über die verschiedenen Produkte aus eigenem Antrieb zu lernen. Es wurde von mir erwartet, die häufigsten Probleme im Laden selbst zu lösen – bei komplizierteren Angelegenheiten sollte ich das Fachpersonal im Büro hinzuziehen. Da ich den Chef offenbar sehr zufriedengestellt hatte, stieg mein Gehalt fast jährlich, was mir ein sehr angenehmes Gefühl im Unternehmen vermittelte, insbesondere als jemand mit einem niedrigen Bildungsniveau.
+        </p>
+        <p>
+          Anschließend setzte ich mir das Ziel, im Lager eine Führungsposition zu erreichen, und begann, mein Wissen weiter auszubauen. Ich wechselte innerhalb des Lagers die Abteilungen und stand stets bereit, dort auszuhelfen, wo es nötig war. Dadurch wurde ich schnell der einzige Mitarbeiter, der in allen Bereichen gearbeitet hatte und das gesamte Lager kannte. Als sich die Gelegenheit bot, wurde ich – trotz meines jungen Alters und der wenigen Dienstjahre – als einer von zwei Teamleitern im Lager eingesetzt. In unserem Lager gab es keinen Lagerverwalter, sondern zwei Teamleiter, die das Lager und die Aufgaben unter sich aufteilten. Durch meine Bemühungen, in allen Bereichen Erfahrungen zu sammeln, begannen immer mehr Mitarbeiter, auch außerhalb ihres eigenen Verantwortungsbereichs auszuhelfen, und die Gesamtatmosphäre verbesserte sich. Auch wenn das Lager keine vollständige Einheit bildete, verbesserte sich die Teamarbeit.
+        </p>
+      </div>
+    </section>
+  </div>
+  
+ 
+  <script>
+    function switchLanguage(lang) {
+      if (lang === 'en') {
+        document.getElementById('content-en').style.display = 'block';
+        document.getElementById('content-de').style.display = 'none';
+      } else if (lang === 'de') {
+        document.getElementById('content-en').style.display = 'none';
+        document.getElementById('content-de').style.display = 'block';
+      }
+    }
+    
+   
+    let docxContent = document.getElementById('docx-content');
+    let fullText = docxContent.innerHTML;
+    let isShort = false;
+    const toggleBtn = document.getElementById('toggle-text-btn');
+    const shortText = `
+      <p>
+       From the start, it was clear that more was expected of me compared to others. I quickly learned to pick and pack goods, understand special customer requests, master product knowledge, and provide customer consultation. My role included assisting with warehouse management and supporting retail sales, handling sales, collection, and customer concerns.
+
+        Teamwork was challenging due to longstanding disagreements among employees, but there were always small supportive groups. Despite constant employee turnover, I got along well with new colleagues and took the initiative to learn about different products. My efforts were recognized, and my salary increased almost annually, making me feel comfortable in the company.
+
+        I aimed to become a leader in the warehouse, expanding my knowledge and helping out in various departments. This made me the only employee with experience in every area of the warehouse. Eventually, I was appointed as one of two team leaders, despite being the youngest and having the fewest years of service. My efforts improved teamwork and the overall atmosphere, although the warehouse was never a complete unit.
+       </p>
+    `;
+    toggleBtn.addEventListener('click', function() {
+      if (!isShort) {
+        docxContent.innerHTML = shortText;
+        toggleBtn.textContent = "Read more";
+        isShort = true;
+      } else {
+        docxContent.innerHTML = fullText;
+        toggleBtn.textContent = "Short Version";
+        isShort = false;
+      }
+    });
+    
+  
+    let docxContentDe = document.getElementById('docx-content-de');
+    let fullTextDe = docxContentDe.innerHTML;
+    let isShortDe = false;
+    const toggleBtnDe = document.getElementById('toggle-text-btn-de');
+    const shortTextDe = `
+      <p>
+        Von Anfang an war klar, dass mehr von mir erwartet wurde als von anderen. Ich lernte schnell, Waren zu kommissionieren und zu verpacken, besondere Kundenwünsche zu verstehen, Produktkenntnisse zu vertiefen und Kunden zu beraten. Meine Aufgabe umfasste die Unterstützung der Lagerverwaltung sowie die Förderung des Einzelhandelsverkaufs, einschließlich Verkauf, Abwicklung und der Bearbeitung von Kundenanliegen.
+
+        Die Teamarbeit erwies sich aufgrund langanhaltender Konflikte unter den Mitarbeitern als herausfordernd, dennoch gab es stets kleine, unterstützende Gruppen. Trotz des ständigen Mitarbeiterwechsels verstand ich mich gut mit den neuen Kollegen und ergriff die Initiative, mich über unterschiedliche Produkte zu informieren. Meine Bemühungen wurden anerkannt, und mein Gehalt stieg fast jährlich, was mir ein angenehmes Gefühl im Unternehmen vermittelte.
+
+        Ich setzte mir das Ziel, eine Führungsposition im Lager zu erreichen, mein Wissen zu erweitern und in verschiedenen Abteilungen mitzuhelfen. Dadurch wurde ich der einzige Mitarbeiter, der in allen Bereichen des Lagers Erfahrung sammelte. Schließlich wurde ich – trotz meines jungen Alters und der wenigen Dienstjahre – als einer von zwei Teamleitern ernannt. Meine Anstrengungen verbesserten die Teamarbeit und das allgemeine Betriebsklima, auch wenn das Lager nie eine vollständig geschlossene Einheit bildete.</p>
+    `;
+    toggleBtnDe.addEventListener('click', function() {
+      if (!isShortDe) {
+        docxContentDe.innerHTML = shortTextDe;
+        toggleBtnDe.textContent = "Mehr lesen";
+        isShortDe = true;
+      } else {
+        docxContentDe.innerHTML = fullTextDe;
+        toggleBtnDe.textContent = "Kurze Version";
+        isShortDe = false;
+      }
+    });
+  </script>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-impressum">
+        <a href="impressum.html" target="_blank">Impressum</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Steven Kemendics</p>
+      <nav class="footer-nav">
+        <a href="https://www.facebook.com/steven.kemendics" target="_blank">
+          <img loading="lazy" src="images/facebook.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/steven-kemendics" target="_blank">
+          <img loading="lazy" src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+        </a>
+      </nav>
+    </div>
+  </footer>
+  
+  <script src="contact.js"></script>
+</body>
+</html>
