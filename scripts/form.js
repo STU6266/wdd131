@@ -1,11 +1,8 @@
-
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
 
 const lastModifiedDate = document.lastModified;
-
-document.getElementById("lastModified").textContent =  "Last Modified: " + lastModifiedDate;
-
+document.getElementById("lastModified").textContent = "Last Modified: " + lastModifiedDate;
 
 const products = [
   {
@@ -36,31 +33,54 @@ const products = [
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
- 
-
   const productSelect = document.getElementById("productName");
-  if  (productSelect) {
+  if (productSelect) {
     products.forEach(function (product) {
       const option = document.createElement("option");
-      option.value = product.id;    
-
-      option.textContent = product.name; 
+      option.value  = product.id;
+      option.textContent = product.name;
       productSelect.appendChild(option);
+
     });
   }
-  
+
   
   if (window.location.pathname.includes("review.html")) {
-    let reviewCount = localStorage.getItem("reviewCount");
+    let reviewCount =  localStorage.getItem("reviewCount");
     reviewCount = reviewCount ? parseInt(reviewCount) : 0;
-    
+
     reviewCount++;
     localStorage.setItem("reviewCount", reviewCount);
-    
-   
+
     const reviewCountDisplay = document.getElementById("reviewCountDisplay");
     if (reviewCountDisplay) {
+
       reviewCountDisplay.textContent = "Total Reviews Submited: " + reviewCount;
     }
+  }
+
+
+  const form = document.querySelector("form");
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      const formData = new FormData(form);
+      const reviewData = {};
+
+      formData.forEach((value, key) => {
+        if (reviewData[key]) {
+          if (Array.isArray(reviewData[key])) {
+            reviewData[key].push(value);
+          } else {
+            reviewData[key] =  [reviewData[key], value];
+          }
+        } else {
+          reviewData[key] = value;
+        }
+
+        
+      });
+
+      localStorage.setItem("latestReview", JSON.stringify(reviewData));
+    });
   }
 });
